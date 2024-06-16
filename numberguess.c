@@ -6,30 +6,30 @@ int main(){
     int times = 0;
     srand(time(NULL));
 
-    printf("welcome to the guessing game : ");
+    printf("welcome to the guessing game : \n");
     do
     {   
         random = rand() * 100 ;
-        printf("please enter your guess");
+        printf("please enter your guess \n");
         scanf("%d",&guess);
 
         if (guess < random)         
         {
-            printf("guess larger number");
+            printf("guess larger number \n");
             times++;
         }
         if (guess > random)
         {
-            printf("guess smaller number");
+            printf("guess smaller number \n");
             times++;
         }
         if(guess == random){
-            printf("congrats, you have guessed the right number .");
-            printf("you score is %d attempts",&times);
+            printf("congrats, you have guessed the right number . \n");
+            printf("you score is %d attempts \n",&times);
         }
         
 
     } while (guess != random);
-    printf("thanks for playing");
-    printf("developed by _Nishant2552_");
+    printf("thanks for playing \n");
+    printf("developed by _Nishant2552_ \n");
 }
