@@ -39,5 +39,15 @@ int main(){
     }
 }
 void register_(){
-
+    if (user_count == MAX)
+    {
+        printf("max user limit exceeded : ");
+        return;
+    }else{
+        int newindex = user_count;
+        user_count++;
+        printf("\nRegister a new user\n");
+        printf("enter user name :  ");
+        fgets(users[newindex].username,30,stdin);
+    }
 }
